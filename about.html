@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Kunal's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 10%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: rgb(170, 107, 228);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: rgb(18, 18, 62);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+                text-align: center;
+            }
+        }
+
+        /* About Section */
+        .about-section {
+            max-width: 70%;
+            margin: 150px auto 50px;
+            text-align: center;
+            background: rgb(18, 18, 62);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(170, 107, 228, 0.5);
+        }
+
+        .about-section h1 {
+            font-size: 2.8rem;
+            color: rgb(170, 107, 228);
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Kunal's Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <h1>About Me</h1>
+        <p>
+            Hello! I'm Kunal, a passionate <span style="color:rgb(170, 107, 228); font-weight:bold;">Cyber Security Analyst</span> and <span style="color:rgb(170, 107, 228); font-weight:bold;">Web Developer</span>.
+            I specialize in building <span style="color:rgb(170, 107, 228); font-weight:bold;">secure web applications</span> while ensuring best security practices.
+            With a strong foundation in <span style="color:rgb(170, 107, 228); font-weight:bold;">HTML, CSS, JavaScript, and Network Security</span>, I aim to 
+            bridge the gap between development and cybersecurity.
+        </p>
+        <p>
+            I love learning new technologies, solving <span style="color:rgb(170, 107, 228); font-weight:bold;">security challenges</span>, and contributing 
+            to the tech community. My goal is to create a <span style="color:rgb(170, 107, 228); font-weight:bold;">safe digital environment</span> through 
+            innovative security solutions.
+        </p>
+    </section>
+
+</body>
+
+</html>
