@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #0a192f;
+            background-color: #0b0d25;
             color: white;
             font-family: 'Poppins', sans-serif;
         }
@@ -28,14 +28,15 @@
             align-items: center;
             height: 80px;
             padding: 0 50px;
-            background-color: #112240;
+            background-color: #171742;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
-            color: #64ffda;
+            color: #b57eff;
         }
 
         nav ul {
@@ -55,13 +56,14 @@
         }
 
         nav ul li a:hover {
-            color: #64ffda;
+            color: #b57eff;
         }
 
         .menu-toggle {
             display: none;
             cursor: pointer;
             font-size: 1.5rem;
+            color: white;
         }
 
         .container {
@@ -81,7 +83,7 @@
         }
 
         .leftSection span {
-            color: #64ffda;
+            color: #b57eff;
         }
 
         .buttons {
@@ -93,8 +95,8 @@
             align-items: center;
             gap: 8px;
             padding: 12px 20px;
-            background-color: #64ffda;
-            color: #0a192f;
+            background-color: #b57eff;
+            color: #0b0d25;
             border-radius: 6px;
             font-size: 1rem;
             font-weight: bold;
@@ -109,7 +111,7 @@
         }
 
         .btn:hover {
-            background-color: #52e0c4;
+            background-color: #a368ff;
         }
 
         .rightSection img {
@@ -138,7 +140,7 @@
         }
 
         .footer {
-            background-color: #112240;
+            background-color: #171742;
             text-align: center;
             padding: 20px;
         }
@@ -147,22 +149,25 @@
             nav ul {
                 display: none;
                 flex-direction: column;
-                background: #112240;
+                background: #171742;
                 position: absolute;
                 top: 80px;
                 right: 0;
                 width: 100%;
                 text-align: center;
-                padding: 10px 0;
+                padding: 20px 0;
             }
 
             nav ul.show {
                 display: flex;
             }
 
+            nav ul li {
+                margin: 15px 0;
+            }
+
             .menu-toggle {
                 display: block;
-                color: white;
             }
         }
     </style>
@@ -191,45 +196,32 @@
                 <span id="element"></span>
                 <div class="buttons">
                     <a href="Resume.pdf" download class="btn"><i class="fas fa-download"></i> Download Resume</a>
-                    <a href="https://github.com/KUNALMENGDE" target="_blank" class="btn"><i class="fab fa-github"></i>
-                        GitHub</a>
-                    <a href="https://www.linkedin.com/in/kunal-mengde-298a09274" target="_blank" class="btn"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/KUNALMENGDE" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/kunal-mengde-298a09274" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
             <div class="rightSection">
                 <img src="bg.png" alt="Developer Illustration">
             </div>
         </section>
-        <section class="work-experience">
-            <h1>Fresher</h1>
-            <p>I am a passionate Web Developer & Cyber Security Enthusiast with a strong foundation in front-end
-                development and network security. I love building user-friendly, responsive websites while ensuring
-                security best practices are implemented to protect digital assets. My goal is to create secure and
-                efficient web applications by integrating cybersecurity principles into modern web development.
-            </p>
-        </section>
     </main>
-
     <footer class="footer">
-        <p>Copyright &#169; kunalsportfolio.com | All rights reserved</p>
+        <p>Copyright &#169; kunalmengdeportfolio.com | All rights reserved</p>
     </footer>
 
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('nav ul').classList.toggle('show');
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show");
         });
     </script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Cyber Security Analyst'],
             typeSpeed: 50,
         });
     </script>
-
 </body>
 
 </html>
